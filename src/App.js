@@ -23,6 +23,10 @@ import FctState from './components/FctState';
 import Todo from './components/Todo';
 import ClassCountUseEffect from './components/ClassCountUseEffect';
 import FctCountUseEffect from './components/FctCountUseEffect';
+import CleanUseEffect from './components/CleanUseEffect';
+import { UserContext }from './components/MyContext';
+import MyContextContainer from './components/MyContextContainer';
+import FctUseReducer from './components/FctUseReducer';
 
 class App extends Component {
 
@@ -44,6 +48,10 @@ class App extends Component {
         First: false,
         Second: false,
         Three: true
+      },
+      contextUser: {
+        name: 'Butcher',
+        age: 48
       }
     }
   }
@@ -103,6 +111,13 @@ class App extends Component {
         </Switch>
       </BrowserRouter>
 
+      <FctUseReducer />
+
+      <UserContext.Provider value={this.state.contextUser}>
+        <MyContextContainer />
+      </UserContext.Provider>
+      
+      <CleanUseEffect />
       <FctCountUseEffect />
       <ClassCountUseEffect />
       <Todo />
