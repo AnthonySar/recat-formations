@@ -1,4 +1,4 @@
-const SearchUsers = ({dataProps}) => {
+const SearchUsers = ({dataProps, notification}) => {
 
   return (
     <table id="search-users">
@@ -11,6 +11,9 @@ const SearchUsers = ({dataProps}) => {
         </tr>
       </thead>
       <tbody>
+        {
+          notification && <tr><td colSpan={4} style={{color: 'green'}}>Veuillez patienter</td></tr>
+        }
         {
           dataProps.map(({id, lastName, firstName, email, address}) => {
             return (

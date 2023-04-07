@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useTransition } from "react";
 import useFetch from "../hooks/useFetch";
 import Search from "./Search";
 import SearchUsers from "./SearchUsers";
@@ -7,6 +7,7 @@ import SearchUsers from "./SearchUsers";
 const SearchContent = () => {
   const [search, setSearch] = useState('');
   const [resultSearch, setResultSearch] = useState([]);
+  const [isPending, startTransition] = useTransition();
   
   // Custom Hook pour le fetch
   // on passe en params l'url à fetch
@@ -26,7 +27,9 @@ const SearchContent = () => {
 
   useEffect(() => {
     if (search !== '') {
-      filterUsers();
+      startTransition(() => {
+        filterUsers();
+      })
     } else {
       setResultSearch([]);
     }
@@ -50,7 +53,9 @@ const SearchContent = () => {
       <h2>Barre de recherche</h2>
       <p>Effectuer une recherche pour faire appel à l'API. Exemple "Alison"</p>
       <p>Mise en place d'un custom Hook également pour simplifier et réutiliser le fetch si besoin.<br/>
-      L'url étant stocké en tant que params du hook</p>
+      L'url étant stocké en tant que params du hook<br />
+      <strong>useTransition</strong> est aussi de la partie <strong>React 18+</strong>, en effet, le message 'Veuillez patienter' s'affiche si la requête est trop longue, cependant, ça ne ralenti pas l'action de l'utilisateur lorsqu'il tape sa recherche dans le champ input.<br />
+      <i>Inspecter - Performances & simuler un processeur 6 à 8x plus long pour voir le résultat de useTransition</i></p>
       { 
         isLoading ? loadingMsg('Ici on attends que le json soit récupérer', 'black') : <Search searchAtr={search} searchHandler={handleChange} />
       }
@@ -62,6 +67,7 @@ const SearchContent = () => {
         :
         <SearchUsers 
           dataProps={resultSearch}
+          notification={isPending}
         />
       }
     </div>
