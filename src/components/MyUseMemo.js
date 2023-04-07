@@ -27,7 +27,7 @@ const MyUseMemo = () => {
     <div>
       <h2>HOOKS : useMemo</h2>
       <p>Dans ce cas présent, on utilise le useState et le useEffect, combiné au fetch, on récupérer le json et on l'affiche dynamiquement</p>
-      <button onClick={() => setCount(count + 1)} className="btn btn-info m-2">Changer l'ID : {count}</button>
+      <button onClick={() => setCount(count + 1)} className="btn btn-info m-2">Changer d'User ID : {count}</button>
 
       { memoizeValue && <div className="alert alert-danger">useMemo se déclenche car elle à mémorisée le résultat de la fct qui nous permet de changer nos users et de sa conditions "count sup à  10"</div> }
       <div>

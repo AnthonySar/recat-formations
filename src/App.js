@@ -28,6 +28,8 @@ import { UserContext }from './components/MyContext';
 import MyContextContainer from './components/MyContextContainer';
 import FctUseReducer from './components/FctUseReducer';
 import MyUseMemo from './components/MyUseMemo';
+import MyUseRef from './components/MyUseRef';
+import MyUseLayoutEffect from './components/MyUseLayoutEffect';
 
 class App extends Component {
 
@@ -112,6 +114,8 @@ class App extends Component {
         </Switch>
       </BrowserRouter>
 
+      <MyUseLayoutEffect />
+      <MyUseRef />
       <MyUseMemo />
       <FctUseReducer />
 
