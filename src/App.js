@@ -27,6 +27,7 @@ import CleanUseEffect from './components/CleanUseEffect';
 import { UserContext }from './components/MyContext';
 import MyContextContainer from './components/MyContextContainer';
 import FctUseReducer from './components/FctUseReducer';
+import MyUseMemo from './components/MyUseMemo';
 
 class App extends Component {
 
@@ -111,6 +112,7 @@ class App extends Component {
         </Switch>
       </BrowserRouter>
 
+      <MyUseMemo />
       <FctUseReducer />
 
       <UserContext.Provider value={this.state.contextUser}>

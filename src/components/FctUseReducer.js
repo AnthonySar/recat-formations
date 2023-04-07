@@ -26,17 +26,22 @@ const FctUseReducer = () => {
   return (
     <>
     <h2>HOOKS : useReducer</h2>
+    <p>L'idée ici est d'utiliser le switch/case du hook sur les "action.type"</p>
     <div className="row">
       <div className="col-6">
-        <p>{count.count1}</p>
-        <button className="btn btn-primary m-3" onClick={() => dispatch({type: 'increment', value: 1})}>+</button>
-        <button className="btn btn-danger m-3" onClick={() => dispatch({type: 'decrement', value: 1})}>-</button>
+        <div className="progress">
+          <div className="progress-bar progress-bar-striped" role="progressbar" style={{width : count.count1}}></div>
+        </div>
+        <button className="btn btn-primary m-3" onClick={() => dispatch({type: 'increment', value: 30})}>+</button>
+        <button className="btn btn-danger m-3" onClick={() => dispatch({type: 'decrement', value: 30})}>-</button>
       </div>
 
       <div className="col-6">
-        <p>{count.count2}</p>
-        <button className="btn btn-primary m-3" onClick={() => dispatch({type: 'increment2', value: 5})}>+</button>
-        <button className="btn btn-danger m-3" onClick={() => dispatch({type: 'decrement2', value: 5})}>-</button>
+        <div className="progress">
+          <div className="progress-bar progress-bar-striped bg-info" role="progressbar" style={{width : count.count2}}></div>
+        </div>
+        <button className="btn btn-primary m-3" onClick={() => dispatch({type: 'increment2', value: 20})}>+</button>
+        <button className="btn btn-danger m-3" onClick={() => dispatch({type: 'decrement2', value: 20})}>-</button>
       </div>
 
       <div className="w-100 mx-0 mb-3">
