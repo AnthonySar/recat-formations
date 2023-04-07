@@ -9,6 +9,7 @@ const Search = ({searchAtr, searchHandler}) => {
         placeholder='Effectuer votre recherche..'
         value={searchAtr} 
         onChange={searchHandler}
+        className="m-3"
       />
     </>
   )
