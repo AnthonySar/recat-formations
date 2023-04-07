@@ -30,6 +30,8 @@ import FctUseReducer from './components/FctUseReducer';
 import MyUseMemo from './components/MyUseMemo';
 import MyUseRef from './components/MyUseRef';
 import MyUseLayoutEffect from './components/MyUseLayoutEffect';
+import MyCustomHook from './components/MyCustomHook';
+import SearchContent from './components/SearchContent';
 
 class App extends Component {
 
@@ -114,6 +116,8 @@ class App extends Component {
         </Switch>
       </BrowserRouter>
 
+      <SearchContent />
+      <MyCustomHook />
       <MyUseLayoutEffect />
       <MyUseRef />
       <MyUseMemo />

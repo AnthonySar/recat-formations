@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+#search-users {
+  width: 90%;
+  margin: 15px auto;
+}
+
+#search-users th {
+  text-align: center;
+  background-color: lightseagreen;
+  color: #000;
+  border: 1px solid #000;
+}
+
+#search-users td, #search-users th {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
