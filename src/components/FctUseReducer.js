@@ -24,7 +24,7 @@ const FctUseReducer = () => {
   const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <>
+    <div className="container-cs">
     <h2>HOOKS : useReducer</h2>
     <p>L'idée ici est d'utiliser le switch/case du hook sur les "action.type"</p>
     <div className="row">
@@ -48,7 +48,7 @@ const FctUseReducer = () => {
         <button className="btn btn-success" onClick={() => dispatch({type: 'reset'})}>Reset</button>
       </div>
     </div>
-    </>
+    </div>
   )
 }
 

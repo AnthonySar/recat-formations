@@ -24,14 +24,14 @@ class Maman extends Component {
 
   render() {
     return (
-      <div className="maman">
-        <h2>Maman</h2>
+      <div className="maman container-cs">
+        <h2>Conversation</h2>
         <button
-          onClick={() => this.ordreMaman('Peux-tu me render un service ?')}>Ordre de la mère</button>
+          onClick={() => this.ordreMaman('Bonjour, comment vas-tu ?')}>Lancer la conversation</button>
         <p>{this.state.messageMaman}</p>
         <hr />
 
-        <Toto name='Toto' leState={this.state} responseTotoProp={this.responseToto} />
+        <Toto name='Réponse de la conversation' leState={this.state} responseTotoProp={this.responseToto} />
         <hr />
       </div>
     );

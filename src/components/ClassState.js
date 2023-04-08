@@ -17,7 +17,7 @@ class ClassState extends Component {
 
   render() {
     return (
-      <div>
+      <div className='container-cs'>
         <h2>HOOKS : useState dans une Class</h2>
         <p>Counter : {this.state.counter}</p>
         <button onClick={this.addOne}>State dans une class</button>

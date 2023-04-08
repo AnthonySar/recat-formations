@@ -17,7 +17,7 @@ const MyCustomHook = () => {
   useUpdateDocTitle(title);
 
   return (
-    <div className="m-3">
+    <div className="container-cs m-3">
       <h2>HOOKS : Custom Hook</h2>
       <button onClick={() => setIsTrue(!isTrue)}>Changer le titre du doc</button>
     </div>

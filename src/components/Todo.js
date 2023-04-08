@@ -41,7 +41,7 @@ const Todo = () => {
   const warningMsg = warning && <div className="alert alert-danger">Veuillez indiquer une Todo</div>
 
   return ( 
-    <div>
+    <div className="container-cs">
       <h2>HOOKS : Todo List</h2>
       <p>Il y à {todos.length} Todo à realiser</p>
       <p>L'id d'une todo est générée via uuidv4</p>

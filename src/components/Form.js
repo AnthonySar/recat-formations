@@ -36,7 +36,7 @@ class Form extends Component {
 
   render() {  
     return(
-      <Fragment> 
+      <div className="container-cs"> 
         <h2>Formulaires</h2>
         <form onSubmit={this.handleSubmitForm}>
           <div>
@@ -63,7 +63,7 @@ class Form extends Component {
         </form>
         
         <PureComp />
-      </Fragment>
+      </div>
     )
   }
 }

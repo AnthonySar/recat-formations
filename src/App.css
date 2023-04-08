@@ -54,3 +54,8 @@
   text-align: center;
   border: 1px solid #ddd;
 }
+
+.container-cs {
+  padding: 40px;
+  border-bottom: 1px solid black;
+}

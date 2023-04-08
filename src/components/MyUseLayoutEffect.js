@@ -32,7 +32,7 @@ const MyUseLayoutEffect = () => {
   };
 
   return (
-    <>
+    <div className="container-cs">
     <div style={style} ref={divRef}>
       <h2>HOOKS : useLayoutEffect</h2>
       <p>Perfomance de rendu avec useLayoutEffect pour la height & la width</p>
@@ -41,11 +41,11 @@ const MyUseLayoutEffect = () => {
     </div>
     <div>
       <p><strong>Résultat : </strong>Ce qu'on à chercher à mésurer ici c'est le temps d'affichage de l'élément, on se rend compte que le <strong>useLayoutEffect</strong> peut être utile pour corriger des bugs d'affichage d'un élément par exemple</p>
-      <p>Dans ette exemple, on ne voit pas le changement de couleur apporté à la div si la hauteur est inférieur ou supp à X.
+      <p className="m-0">Dans ette exemple, on ne voit pas le changement de couleur apporté à la div si la hauteur est inférieur ou supp à X.
         Par contre, on aperçoit le changement de width avec le useEffect
       </p>
+      </div>
     </div>
-    </>
   )
 }
 

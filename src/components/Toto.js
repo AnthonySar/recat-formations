@@ -7,7 +7,7 @@ const Toto = (props) => {
       <h2>{props.name}</h2>
       <button 
         disabled={props.leState.disabled}
-        onClick={() => props.responseTotoProp('Non merci :)')}>Réponse de Toto</button>
+        onClick={() => props.responseTotoProp('Tout vas bien, merci :)')}>Répondre à la question</button>
       <p>{props.leState.messageToto}</p>
     </div>
   )

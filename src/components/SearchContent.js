@@ -49,7 +49,7 @@ const SearchContent = () => {
   }
 
   return (
-    <div>
+    <div className="container-cs">
       <h2>Barre de recherche</h2>
       <p>Effectuer une recherche pour faire appel à l'API. Exemple "Alison"</p>
       <p>Mise en place d'un custom Hook également pour simplifier et réutiliser le fetch si besoin.<br/>

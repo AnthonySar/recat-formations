@@ -8,7 +8,7 @@ const CleanUseEffect = () => {
   const btnDisplay = show ? 'Cacher' : 'Afficher';
 
   return (
-    <div className="container">
+    <div className="container container-cs">
       <h2>UseEffect Nettoyage</h2>
       <p>ici nous sommes sur un container qui servira à démonter les 2 types de useEffect : Class & Foncion</p>
       <p>Lorsqu'on démonte un composant, il faut s'assurer que les useEffect, eventListener ne se propage plus et soit bien arrété</p>

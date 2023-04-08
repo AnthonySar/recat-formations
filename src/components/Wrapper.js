@@ -6,7 +6,7 @@ const Container = ({children}) => {
     width: 'fit-content', 
     margin: '10px auto', 
     boxShadow: '6px 6px 2px 1px pink', 
-    padding: '5px', 
+    padding: '15px', 
     borderRadius: '10px'
   };
 

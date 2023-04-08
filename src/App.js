@@ -42,7 +42,7 @@ class App extends Component {
   
     this.state = {
       title: 'Liste des voitures disponibles', 
-      color: 'green',
+      color: 'lightcoral',
       display: true,
       age: 10,
       showModal: false,
@@ -134,7 +134,7 @@ class App extends Component {
       <FctState />
       <ClassState />
 
-      <div>
+      <div className='container-cs'>
         <h2>Les composants d'Ordre Supérieur HOC</h2><hr />
         <h3>Qui est le prince des Saiyans (Cliquer sur l'image)</h3>
         <div className='row'>

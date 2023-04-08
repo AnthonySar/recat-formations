@@ -24,7 +24,7 @@ const MyUseMemo = () => {
   }, [count]);
 
   return (
-    <div>
+    <div className="container-cs">
       <h2>HOOKS : useMemo</h2>
       <p>Dans ce cas présent, on utilise le useState et le useEffect, combiné au fetch, on récupérer le json et on l'affiche dynamiquement</p>
       <button onClick={() => setCount(count + 1)} className="btn btn-info m-2">Changer d'User ID : {count}</button>

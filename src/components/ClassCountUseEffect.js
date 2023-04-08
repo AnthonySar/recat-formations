@@ -22,7 +22,7 @@ class ClassCountUseEffect extends Component {
 
   render() {
     return (
-      <div>
+      <div className='container-cs'>
         <h2>HOOKS : useEffect dans une Class</h2>
         <p>Dans ce cas la, on utilise les méthodes classique de cycle de vie du composant</p>
         <span>Vous avez cliqué {this.state.count} fois</span>

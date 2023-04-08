@@ -11,7 +11,7 @@ const FctCountUseEffect = () => {
   }, [count])
 
   return (
-    <div>
+    <div className="container-cs">
       <h2>HOOKS : useEffect dans une Fct</h2>
       <p>Cette fois, on se sert du Hook - useEffect</p>
       <span>Vous avez cliqué {count} fois</span>

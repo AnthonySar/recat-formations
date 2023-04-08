@@ -8,7 +8,7 @@ const FctState = () => {
   }
 
   return (
-    <div>
+    <div className="container-cs">
       <h2>HOOKS : useState dans une Fct</h2>
       <p>Counter : {counter}</p>
       <button onClick={addOne}>State dans Fct</button>

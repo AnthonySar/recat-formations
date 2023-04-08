@@ -24,7 +24,7 @@ class MyRefs extends Component {
 
   render() {
     return (
-      <div>
+      <div className='container-cs'>
         <h2>Les Refs</h2>
         <div>
           <p ref={this.myTitle}>Valeur : {this.state.value}</p>

@@ -9,7 +9,7 @@ const MyUseRef = () => {
   };
 
   return (
-    <div>
+    <div className="container-cs">
       <h2>HOOKS : useRef</h2>
       <p>Ici on utilise le useRef pour venir capturer la donnée que l'on entre dans l'input, au submit, on prend la valeur current de l'input que l'on mets dans une variable name</p>
       <span><strong>{name}</strong></span>
